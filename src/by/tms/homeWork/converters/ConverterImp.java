@@ -8,7 +8,7 @@ public abstract static class Data {
     public double fahrenheit;
     public double kelvin;
 }
-    public int convert(Units unit) {
+    public void convert(Units unit) {
      switch (unit.name){
          case "Градус Цельсия":
              System.out.println("Результат конвертации Градуса Цельсия : " );
@@ -38,7 +38,5 @@ public abstract static class Data {
              System.out.println("Градусы Фаренгейта = "+unit.fahrenheit);
              break;
      }
-
-        return 0;
     }
 }
